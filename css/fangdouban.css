@@ -1,0 +1,943 @@
+     /*清零*/
+
+     * {
+         margin: 0px;
+         padding: 0px;
+     }
+
+     body {
+         font: 12px/1.62 Helvetica, Arial, scan-serif;
+     }
+
+     a {
+         text-decoration: none;
+     }
+
+     img,
+     input {
+         border: none;
+         /*兼容ie6*/
+         border: 1px solid;
+     }
+
+     li {
+         list-style: none;
+     }
+     /*头部开始*/
+
+     #hd-header {
+         width: 950px;
+         height: 90px;
+         margin: 0 auto;
+         position: relative;
+     }
+
+     #hd-header .header-logo {
+         display: block;
+         width: 154px;
+         height: 30px;
+         background: url(../img/logo_db.png) no-repeat;
+         position: absolute;
+         left: 0px;
+         top: 29px;
+     }
+
+     #hd-header .header-search {
+         width: 303px;
+         height: 30px;
+         border: 1px solid #c3c3c3;
+         position: absolute;
+         left: 183px;
+         top: 31px;
+         color: #e4e4e4;
+         padding-left: 7px;
+         line-height: 30px;
+     }
+
+     #hd-header p {
+         width: 13px;
+         height: 13px;
+         background: url("../img/bn_srh_1.png") no-repeat;
+         position: absolute;
+         left: 468px;
+         top: 42px;
+     }
+
+     #hd-header ul {
+         width: 402px;
+         height: 23px;
+         position: absolute;
+         right: 0px;
+         top: 36px;
+     }
+
+     #hd-header ul li {
+         float: left;
+         margin-right: 17px;
+     }
+
+     #hd-header ul li a {
+         display: block;
+         width: 40px;
+         height: 23px;
+     }
+
+     #hd-header ul li a.header-book {
+         background: url("../img/anony_nav_logo4.png") 0px 0px no-repeat;
+     }
+
+     #hd-header ul li a.header-movie {
+         background: url("../img/anony_nav_logo4.png") -59px 0px no-repeat;
+     }
+
+     #hd-header ul li a.header-music {
+         background: url("../img/anony_nav_logo4.png") -120px 0px no-repeat;
+     }
+
+     #hd-header ul li a.header-group {
+         background: url("../img/anony_nav_logo4.png") -179px 0px no-repeat;
+     }
+
+     #hd-header ul li a.header-fm {
+         width: 81px;
+         background: url("../img/anony_nav_logo4.png") -239px 0px no-repeat;
+     }
+
+     #hd-header ul li a.header-local {
+         background: url("../img/anony_nav_logo4.png") -340px 0px no-repeat;
+     }
+     /*头部结束*/
+     /*注册区域*/
+
+     #hd-reg-background {
+         background: #e8edf1;
+         height: 88px;
+         width: 100%;
+     }
+
+     #hd-reg {
+         width: 950px;
+         height: 88px;
+         margin: 0 auto;
+         position: relative;
+     }
+
+     #hd-reg .reg-join {
+         display: block;
+         width: 120px;
+         height: 37px;
+         background: #ef7360;
+         border-radius: 2px;
+         font-size: 14px;
+         color: #fff;
+         line-height: 37px;
+         text-align: center;
+         position: absolute;
+         left: 0px;
+         top: 20px;
+     }
+
+     #hd-reg .reg-join:hover {
+         background: #ED6752;
+     }
+
+     #hd-reg .reg-join span {
+         font-size: 12px;
+         margin-left: 3px;
+     }
+
+     #hd-reg p {
+         position: absolute;
+         left: 138px;
+         top: 30px;
+         font-size: 16px;
+         color: #666666;
+     }
+
+     #hd-reg input {
+         position: absolute;
+         width: 158px;
+         height: 32px;
+     }
+
+     #hd-reg .reg-username {
+         right: 250px;
+         top: 20px
+     }
+
+     #hd-reg .reg-password {
+         right: 88px;
+         top: 20px;
+     }
+
+     #hd-reg .reg-login {
+         display: block;
+         width: 80px;
+         height: 33px;
+         background: #3ba354;
+         color: #fff;
+         position: absolute;
+         right: 4px;
+         top: 20px;
+         text-align: center;
+         line-height: 33px;
+         border-radius: 2px;
+         font-size: 13px;
+     }
+
+     #hd-reg .reg-login:hover {
+         background: #1c9439;
+     }
+
+     #hd-reg p.reg-p {
+         position: absolute;
+         left: 544px;
+         top: 62px;
+         width: 85px;
+         height: 17px;
+         padding-left: 17px;
+         line-height: 17px;
+         collapse: #000;
+         font-size: 12px;
+     }
+
+     #hd-reg p.reg-p .remember {
+         display: block;
+         height: 13px;
+         width: 13px;
+         position: absolute;
+         left: 0px;
+         top: 2px;
+     }
+
+     #hd-reg .reg-forget {
+         position: absolute;
+         left: 704px;
+         top: 61px;
+     }
+     /*注册区域结束*/
+     /*内容区域*/
+
+     #hd-con {
+         position: relative;
+         width: 950px;
+         height: 546px;
+         margin: 0 auto;
+     }
+
+     #hd-con .con-lef {
+         width: 373px;
+         height: 546px;
+         position: absolute;
+         left: 0px;
+         top: 0px;
+     }
+
+     #hd-con .con-lef ul {
+         margin-top: 16px;
+     }
+
+     #hd-con .con-lef ul li {
+         width: 171px;
+         height: 219px;
+         float: left;
+         margin-right: 10px;
+         background-color: white;
+     }
+
+     #hd-con .con-lef ul li span {
+         color: #999999;
+     }
+
+     #hd-con .con-mid {
+         position: absolute;
+         left: 380px;
+         top: 0px;
+         width: 298px;
+         height: 546px;
+     }
+
+     #hd-con .con-mid ul {
+         margin-top: 37px;
+     }
+
+     #hd-con .con-mid ul li {
+         line-height: 30px;
+     }
+
+     #hd-con .con-mid ul h2 {
+         color: #999;
+         font-weight: 400;
+         font-size: 12px;
+     }
+
+     #hd-con .con-mid ul p {
+         color: #666666;
+     }
+
+     #hd-con .con-right p {
+         color: #999999;
+     }
+
+     #hd-con .con-right b {
+         display: block;
+         color: #999999;
+         font-weight: 400;
+     }
+
+     #hd-con .con-right {
+         height: 546px;
+     }
+
+     #hd-con .con-right ul {
+         margin-top: 13px;
+     }
+
+     #hd-con .con-right ul li {
+         height: 57px;
+         padding-bottom: 13px;
+     }
+
+     #hd-con .con-right .last-ad {
+         width: 258px;
+         height: 118px;
+         border: solid 1px #eeeeee;
+         position: absolute;
+         right: 6px;
+         bottom: 45px;
+     }
+
+     #hd-con .con-right .last-ad h2 {
+         color: #0000;
+         font-size: 15px;
+         position: absolute;
+         left: 19px;
+         top: 15px;
+     }
+
+     #hd-con .con-right .last-ad a.last-ad-pic {
+         position: absolute;
+         left: 19px;
+         top: 44px;
+     }
+
+     #hd-con .con-right .last-ad a.last-ad-ghost {
+         display: block;
+         width: 68px;
+         height: 28px;
+         overflow: hidden;
+         position: absolute;
+         left: 87px;
+         top: 11px;
+         color: white;
+     }
+
+     #hd-con .con-right .last-ad a.last-ad-ghost:hover {
+         background: white;
+     }
+
+     #hd-con .con-right .last-ad a.last-ad-rainbow {
+         position: absolute;
+         right: 0px;
+         top: 0px;
+         color: white;
+     }
+
+     #hd-con .con-right .last-ad a.last-ad-rainbow:hover {
+         background: white;
+     }
+
+     #hd-con .con-right .last-ad a.last-ad-beghost {
+         position: absolute;
+         left: 128px;
+         top: 46px;
+     }
+
+     #hd-con .con-right .last-ad p {
+         color: #999999;
+         position: absolute;
+         left: 128px;
+         top: 66px;
+     }
+
+     #hd-con .con-right .last-ad span {
+         color: #999999;
+         position: absolute;
+         left: 128px;
+         top: 80px;
+     }
+     /*内容区域结束*/
+     /*电影区域*/
+
+     #hd-movie-background {
+         height: 631px;
+         background: #f7f7f7;
+         margin-top: 44px;
+         padding-top: 40px;
+     }
+
+     #hd-movie-background #hd-movie {
+         width: 950px;
+         height: 631px;
+         margin: 0 auto;
+         position: relative;
+     }
+
+     #hd-movie-background #hd-movie .hd-movie-name {
+         display: block;
+         text-align: center;
+     }
+
+     #hd-movie-background #hd-movie span.hd-movie-point {
+         display: block;
+         width: 47px;
+         height: 11px;
+         overflow: hidden;
+         background: url("../img/midstars.gif") 20px 1px no-repeat;
+         text-align: left;
+         padding-left: 80px;
+         line-height: 12px;
+         color: #ff4400;
+     }
+
+     #hd-movie-background #hd-movie .movie-choose {
+         display: block;
+         width: 68px;
+         height: 23px;
+         background: #1c8bd0;
+         color: white;
+         line-height: 23px;
+         border-radius: 3px;
+         margin: 6px auto;
+     }
+
+     #hd-movie-background #hd-movie ul.hd-movie-list {
+         margin-top: 10px;
+     }
+
+     #hd-movie-background #hd-movie ul.hd-movie-list li {
+         margin-bottom: 40px;
+         overflow: hidden;
+     }
+
+     #hd-movie-background #hd-movie .movie-right-ul {
+         margin-top: 15px;
+         float: left;
+     }
+
+     #hd-movie-background #hd-movie .movie-right-ul li {
+         width: 46px;
+         float: left;
+         line-height: 30px;
+     }
+
+     #hd-movie-background #hd-movie .movie-title {
+         float: left;
+         margin-top: 20px;
+     }
+
+     #hd-movie-background #hd-movie .movie-right-down {
+         float: left;
+     }
+
+     #hd-movie-background #hd-movie .movie-right-down li {
+         border-bottom: solid 1px cadetblue;
+         height: 35px;
+         line-height: 30px;
+         width: 264px;
+     }
+
+     #hd-movie-background #hd-movie .movie-right-down li a {
+         margin-left: 12px;
+     }
+
+     #hd-movie-background #hd-movie .movie-pic {
+         background: url(../img/app_icons_50_6.jpg) -350px 0 no-repeat;
+     }
+     /*电影区域结束*/
+     /*读书区域*/
+
+     #hd-book {
+         width: 950px;
+         height: 634px;
+         margin: 38px auto 0px;
+         position: relative;
+     }
+
+     #hd-book a {
+         color: #614e3c;
+     }
+
+     #hd-book a:hover {
+         color: white;
+     }
+
+     #hd-book .book-new {
+         position: relative;
+     }
+
+     #hd-book .book-new img {
+         position: absolute;
+         left: 28px;
+         top: 3px;
+     }
+
+     #hd-book .book-read {
+         background: url("../img/app_icons_50_6.jpg") no-repeat;
+     }
+
+     #hd-book .book-write {
+         background: url("../img/app_icons_50_6.jpg") -399px 0 no-repeat;
+     }
+
+     #hd-book .book-buy {
+         background: url("../img/app_icons_50_6.jpg") -200px 0 no-repeat;
+     }
+
+     #hd-book ul {
+         margin-top: 10px;
+     }
+
+     #hd-book ul .book-free-read {
+         display: block;
+         width: 68px;
+         height: 23px;
+         background: #999a95;
+         text-align: center;
+         line-height: 23px;
+         color: white;
+         margin: 0 auto;
+         border-radius: 2px;
+     }
+
+     #hd-book ul .book-free-read:hover {
+         background: #878882;
+     }
+
+     #hd-book .mid p {
+         margin-top: 5px;
+     }
+
+     #hd-book .book-num {
+         margin-top: 32px;
+         float: left;
+         width: 500px;
+     }
+
+     #hd-book .mid .book-num-ul {
+         float: left;
+         margin-top: 10px;
+     }
+
+     #hd-book .book-num-ul a img {
+         width: 100%;
+         height: 100%;
+     }
+
+     #hd-book .book-num-ul a.book-num-pic {
+         display: block;
+         width: 100px;
+         height: 148px;
+         margin: 0 auto;
+     }
+
+     #hd-book .book-num-ul strong {
+         font-size: 12px;
+         color: #666666;
+         font-weight: 400;
+     }
+
+     #hd-book .right ul li {
+         border-bottom: solid 1px cadetblue;
+         height: 60px;
+         margin-top: 25px;
+     }
+
+     #hd-book .right ul li span {
+         float: left;
+         margin-right: 11px;
+         color: #999999;
+     }
+
+     #hd-book .right ul li a {
+         float: left;
+         margin-right: 11px;
+         margin-bottom: 5px;
+     }
+     /*读书区域结束*/
+     /*音乐区域*/
+
+     #hd-music-background {
+         height: 464px;
+         background: #f7f7f7;
+         margin-top: 45px;
+         padding-top: 40px;
+     }
+
+     #hd-music-background a {
+         color: #555d53;
+     }
+
+     #hd-music-background a:hover {
+         color: white;
+     }
+
+     #hd-music-background #hd-music {
+         width: 950px;
+         margin: 0 auto;
+         position: relative;
+     }
+
+     #hd-music-background #hd-music .music-title {
+         color: #f38c6a;
+     }
+
+     #hd-music-background #hd-music .music-title:hover {
+         color: white;
+     }
+
+     #hd-music-background #hd-music .music-fm {
+         background: url("../img/app_icons_50_6.jpg") -250px 0 no-repeat;
+     }
+
+     #hd-music-background #hd-music .music-people {
+         background: url("../img/app_icons_50_6.jpg") -50px 0 no-repeat;
+     }
+
+     #hd-music-background #hd-music .mid ul {
+         margin-top: 10px;
+     }
+
+     #hd-music-background #hd-music .mid ul li {
+         height: 140px;
+         width: 127px;
+     }
+
+     #hd-music-background #hd-music .mid ul b {
+         display: block;
+         width: 127px;
+         height: 9px;
+         background: url("../img/midstars.gif") 0 0 no-repeat;
+         color: #fd4400;
+         line-height: 10px;
+         margin-left: 35px;
+         padding-top: 1px;
+     }
+
+     #hd-music-background #hd-music .music-right-ul li {
+         width: 266px;
+         height: 82px;
+         position: relative;
+     }
+
+     #hd-music-background #hd-music .music-right-ul li img {
+         width: 48px;
+         height: 60px;
+         position: absolute;
+         left: 19px;
+         top: 0px;
+     }
+
+     #hd-music-background #hd-music .music-right-ul li em {
+         position: absolute;
+         left: 0px;
+         top: 4px;
+     }
+
+     #hd-music-background #hd-music .music-right-ul li .music-right-name {
+         position: absolute;
+         left: 77px;
+         top: 3px;
+     }
+
+     #hd-music-background #hd-music .music-right-ul li p {
+         position: absolute;
+         left: 77px;
+         top: 23px;
+     }
+
+     #hd-music-background #hd-music .music-right-ul li b {
+         position: absolute;
+         left: 77px;
+         top: 43px;
+     }
+     /*音乐区域结束*/
+     /*小组区域*/
+
+     #hd-group {
+         width: 950px;
+         height: 642px;
+         position: relative;
+         margin: 38px auto 0px;
+     }
+
+     #hd-group a {
+         color: #017a85;
+     }
+
+     #hd-group a:hover {
+         color: white;
+     }
+
+     #hd-group .group-lit {
+         background: url("../img/app_icons_50_6.jpg") -500px 0px no-repeat;
+     }
+
+     #hd-group .group-mid-ul li {
+         width: 265px;
+         height: 89px;
+         position: relative;
+         float: left;
+     }
+
+     #hd-group .group-mid-ul li .group-pic {
+         position: absolute;
+         left: 0px;
+         top: 0px;
+     }
+
+     #hd-group .group-mid-ul li .group-title {
+         position: absolute;
+         left: 64px;
+         top: 0px;
+     }
+
+     #hd-group .group-mid-ul li span {
+         position: absolute;
+         left: 64px;
+         top: 23px;
+         color: #999999;
+     }
+
+     #hd-group .group-right-ul {
+         width: 260px;
+         height: 70px;
+         float: left;
+         margin-top: 20px;
+     }
+
+     #hd-group .group-right-ul .right-ul-first {
+         font-size: 14px;
+         color: #333333;
+     }
+
+     #hd-group .group-right-ul .right-ul-first:hover {
+         color: white;
+     }
+
+     #hd-group .right li p a {
+         float: left;
+         margin-right: 12px;
+     }
+     /*小组区域结束*/
+     /*同城区域*/
+
+     #hd-local-background {
+         background: #f7f7f7;
+         height: 385px;
+         padding-top: 40px;
+         margin-bottom: 30px;
+     }
+
+     #hd-local-background #hd-local {
+         width: 950px;
+         height: 345px;
+         margin: 0 auto;
+         position: relative;
+     }
+
+     #hd-local-background #hd-local a {
+         color: #664433;
+     }
+
+     #hd-local-background #hd-local a:hover {
+         color: white;
+     }
+
+     #hd-local-background #hd-local .local-big-a {
+         color: #ee6a03;
+     }
+
+     #hd-local-background #hd-local .local-a {
+         background: url("../img/app_icons_50_6.jpg") -100px 0 no-repeat;
+     }
+
+     #hd-local-background #hd-local .local-mid-ul li {
+         width: 234px;
+         height: 141px;
+         position: relative;
+         float: left;
+         margin-right: 25px;
+     }
+
+     #hd-local-background #hd-local .local-mid-ul li div {
+         float: right;
+         width: 160px;
+         text-align: left;
+     }
+
+     #hd-local-background #hd-local .local-mid-ul li .local-mid-pic {
+         position: absolute;
+         left: 0px;
+         top: 0px;
+     }
+
+     #hd-local-background #hd-local .local-mid-ul li .local-mid-title span {
+         background: #ff8263;
+         text-align: center;
+         color: white;
+         padding-left: 3px;
+         padding-right: 3px;
+         font-size: 11px;
+         white-space: nowrap;
+     }
+
+     #hd-local-background #hd-local .local-mid-ul li p {
+         margin-top: 3px;
+         color: #666666;
+         text-align: left;
+     }
+
+     #hd-local-background #hd-local .local-mid-ul li span {
+         color: #666666;
+         text-align: left;
+     }
+
+     #hd-local-background #hd-local .group-right-ul {
+         width: 260px;
+         height: 70px;
+         float: left;
+         margin-top: 20px;
+     }
+
+     #hd-local-background #hd-local .group-right-ul .right-ul-first {
+         font-size: 14px;
+         color: #333333;
+     }
+
+     #hd-local-background #hd-local .group-right-ul .right-ul-first:hover {
+         color: white;
+     }
+
+     #hd-local-background #hd-local .right li p a {
+         float: left;
+         margin-right: 12px;
+     }
+     /*同城区域结束*/
+     /*网页尾部*/
+
+     #hd-foot {
+         width: 950px;
+         height: 88px;
+         border-top: dashed 1px #dcdcdc;
+         margin: 35px auto 0;
+         padding-top: 17px;
+     }
+
+     #hd-foot .foot-left {
+         width: 460px;
+         color: #999999;
+         float: left;
+     }
+
+     #hd-foot .foot-right {
+         width: 460px;
+         float: right;
+     }
+     /*网页尾部结束*/
+     /*公共样式*/
+
+     a {
+         color: #3377aa;
+     }
+
+     a:hover {
+         background: #3377AA;
+         color: #fff;
+     }
+
+     h2.title {
+         font: 15px/150% Arial, Helvetica, sans-serif;
+         color: #007722;
+         width: 280px;
+     }
+
+     h2.title span {
+         color: #666666;
+         font-size: 12px;
+     }
+
+     .right {
+         position: absolute;
+         width: 266px;
+         right: 0px;
+         top: 0px;
+     }
+
+     .ad {
+         width: 950px;
+         height: 90px;
+         margin: 0px auto;
+     }
+
+     .left {
+         width: 121px;
+         position: absolute;
+         left: 0px;
+         top: 0px;
+     }
+
+     .left .left-title {
+         font-size: 24px;
+         color: #2297cc;
+     }
+
+     .left a:hover {
+         color: white;
+     }
+
+     .left .left-up {
+         margin-top: 5px;
+     }
+
+     .left .left-up li {
+         font-size: 14px;
+         line-height: 24px;
+     }
+
+     .left .left-down {
+         margin-top: 28px;
+     }
+
+     .left .left-down li {
+         width: 65px;
+         height: 93px;
+     }
+
+     .left .left-down li a.left-down-pic {
+         display: block;
+         width: 50px;
+         height: 50px;
+         border-radius: 6px;
+         box-shadow: 3px 3px 3px #999;
+     }
+
+     .left .left-down li a.left-down-des {
+         line-height: 35px;
+     }
+
+     .mid {
+         width: 530px;
+         /*border: solid 1px black;*/
+         position: absolute;
+         left: 121px;
+         top: 0px;
+     }
+
+     .mid ul li {
+         width: 127px;
+         height: 204px;
+         text-align: center;
+         float: left;
+         margin-bottom: 40px;
+     }
